@@ -79,16 +79,10 @@ margin-right: 76px;
     display: flex;
     gap: 40px;
 }
-/* .header-menu-item::after{
-    display: block;
-position: absolute;
-    content: '1';
-    width: 48px;
-    height: 4px;
- border-radius: 2px;
-background: #404BBF;
-flex-shrink: 0;
-} */
+.header-menu-item{
+    
+}
+    
 .header-menu-link{
     color: #2E2F42;
 /* Body Medium */
@@ -129,7 +123,9 @@ background: #404BBF;
     display: flex;
     gap: 40px;
 }
-
+.address-item{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address-link{
     color: #434455;
 /* Body */
@@ -310,7 +306,6 @@ align-items: center;
 background:  #FFF;
 width: calc((100% - 3 * 24px) / 4);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 }
 .team-list-item-img{ 
   
@@ -350,7 +345,7 @@ gap: 24px;
 .cont-item{
     width: 40px;
     height: 40px;
-
+    
 }
 .address-item-icons{
     display: flex;
@@ -360,13 +355,14 @@ gap: 24px;
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 .address-item-icons:hover{
     background-color: #404BBF;
     
 }
-.address-item-icon:focus{
+.address-item-icons:focus{
     background-color: #404bbf;
 }
 .team-icons{
@@ -449,7 +445,7 @@ display: flex;
     background: var(--IRIS, #4D5AE5);
     height: 100%;
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-portfolio{
@@ -550,5 +546,8 @@ height: 40px;;
 }
 
 .link-footer-icons:hover{
+    background-color: #31D0AA;
+}
+.link-footer-icons:focus{
     background-color: #31D0AA;
 }
